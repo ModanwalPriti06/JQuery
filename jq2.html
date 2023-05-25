@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+var a=$(document).ready(function(){
+var btn=$("button").dblclick(function(){
+var txt1=$("#txt1").val();
+var txt2=$("#txt2").val();
+var c=parseInt(txt1)+parseInt(txt2);
+alert("Sum is:"+c);
+})
+})
+</script>
+</head>
+<body>
+<input type="text" id="txt1"/>
+<input type="text" id="txt2"/>
+<button>Get Value</button>
+</body>
+</html>

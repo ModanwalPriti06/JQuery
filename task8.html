@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+div{
+border:5px solid black;
+height:100px;
+width:200px;
+margin:20px;
+float:left;
+padding:20px;
+}
+.p{
+margin-top:20px;
+margin-left:10px;
+padding:5px;
+border:4px solid black;
+background:skyblue;
+text-decoration:underline;}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#box2").addClass('p');
+});
+
+});
+</script>
+</head>
+<body>
+<div id="box2"><p>Hello preeti modanwal<p></div>
+<button id="btn1">addclass</button>
+</body>
+</html>

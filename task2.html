@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var v=$("#txt").val();
+var res="";
+for(i=1;i<=10;i++)
+{
+var res=res+v+"x"+i+"="+v*i+"</br></br>";
+$("#tb").html(res);
+$("#tb").css("background","pink");
+}});});
+</script>
+</head><body>
+Enter Number:<input type="text" id="txt"></br></br>
+<button>Click</button></br></br>
+Table is:<p id="tb"></p>
+</body>
+</html>

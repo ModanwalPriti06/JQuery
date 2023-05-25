@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+img{
+border:15px groove navy;
+padding:10px;
+box-shadow:2px 2px 4px black inset;
+width:300px;
+opacity:.7;
+}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#im1").fadeOut(2000);
+$("#im2").fadeOut(3000);
+$("#im3").fadeOut(4000);
+
+});
+$("#btn2").click(function(){
+$("#im1").fadeIn(4000);
+$("#im2").fadeIn(3000);
+$("#im3").fadeIn(2000);
+
+});
+$("#btn3").click(function(){
+$("#im1").fadeToggle("midium");
+$("#im2").fadeToggle("fast");
+$("#im3").fadeToggle("slow");//"fast"||"slow"||"down"
+});
+$("#btn4").click(function(){
+$("#im1").fadeTo(2000,.7);
+$("#im2").fadeTo(3000,.4);//opacity 0 n krke kisi point pr stop krne lie use krte hai....
+$("#im3").fadeTo(2000,.1);//"fast"||"slow"||"down"//opacity
+
+});
+});
+</script>
+</head>
+<body>
+<img src="E:\image/yug.jpg" height="500px" id="im1">
+<img src="E:\image/image_1.jpg" height="500px" id="im2">
+<img src="E:\image/w5.jpg" height="500px" id="im3"></br>
+<button id="btn1">fadeOut</button>
+<button id="btn2">fadeIn</button>
+<button id="btn3">fadeToggle</button>
+<button id="btn4">fadeTo</button>
+
+</body>
+</html>

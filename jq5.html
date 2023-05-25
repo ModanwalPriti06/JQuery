@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+#box{
+border:2px soilid red;
+background:pink;
+}</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#box").css({padding:"25px",background:"pink",transition:"all ease 2s"});
+});
+$("#btn2").click(function(){
+$("#box").empty();
+});
+});
+</script>
+</head><body>
+<div id="box">
+<h1>WELCOME</h1>
+<img src="E:\image/pp.jpg" height="200px" class="imgM" width="350px"></br>
+his is a humble attempt to develop a basic website by the students for the students
+Content of the website will cover basic concepts of various technologies and programming languages.
+ Focus area of the website is to provide simple programming exercises of concert technologies.
+We are trying to adopt the continuous development and maintenance of the website in incremental manner.So soon more and more content of various Technologies shall be made available
+</div></br>
+<button id="btn1">style</button>
+<button id="btn2">EMPTY</button>
+<button id="btn3">REMOVE</button>
+</div></body>
+</html>

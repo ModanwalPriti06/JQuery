@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+img{
+border:10px solid maroon;
+padding:10px;
+box-shadow:2px 2px 4px black inset;
+width:300px;
+}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#im1").slideUp(2000);
+$("#im2").slideUp(3000);
+$("#im3").slideUp(4000);
+
+});
+$("#btn2").click(function(){
+$("#im1").slideDown(4000);
+$("#im2").slideDown(3000);
+$("#im3").slideDown(2000);
+
+});
+$("#btn3").click(function(){
+$("#im1").slideToggle(4000);
+$("#im2").slideToggle(3000);
+$("#im3").slideToggle(2000);//"fast"||"slow"||"down"
+
+});
+});
+</script>
+</head>
+<body>
+<img src="E:\image/7.jpg" height="500px" id="im1">
+<img src="E:\image/1.jpg" height="500px" id="im2">
+<img src="E:\image/baby.jpg" height="500px" id="im3"></br>
+<button id="btn1">slideUP</button>
+<button id="btn2">Slidedown</button>
+<button id="btn3">SlideToggle</button>
+
+</body>
+</html>

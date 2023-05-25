@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery.min.js"></script><script>
+$(document).ready(function(){
+$("button").click(function(){
+var txt1=$("#txt1").val();
+var txt2=$("#txt2").val();
+var d=$("#tb").text();
+$("#txt2").css("border","4px solid red",);
+$("#txt1").css("border","4px solid red","color","red");
+$("#tb").text(txt1+txt2);
+});
+});
+</script>
+</head><body>
+<input type="text" id="txt1"/>
+<input type="" id="txt2"/></br>
+<button>click!</button>
+<div id="tb"></div></body>
+</html>

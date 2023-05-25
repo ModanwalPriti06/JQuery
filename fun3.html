@@ -1,0 +1,64 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var res="<tr><td>Preeti</td><td>cs</td><td>Lakhimpur</td></tr>";
+$("#btn1").click(function(){
+$("tr:first").css({background:"black",color:"red"});
+$("tr:gt(0)").css({background:"black",color:"white"});
+$("tr:gt(3)").css({background:"pink",color:"black"});
+$("tr:last").css({background:"maroon",color:"black"});
+});
+$("#btn2").click(function(){
+$("tr th").empty();
+});
+$("#btn3").click(function(){
+$("table").remove();
+});
+$("#btn4").click(function(){
+$("tr:eq(5)").before(res);
+});
+});
+</script>
+</head>
+<body>
+<table border="1px">
+<tr>
+<th>Name</th>
+<th>Branch</th>
+<th>Address</th>
+</tr>
+<tr>
+<th>Preeti</th>
+<th>CS</th>
+<th>kanpur</th>
+</tr>
+<tr>
+<th>Manali</th>
+<th>IT</th>
+<th>Amethi</th>
+</tr>
+<tr>
+<th>Akriti</th>
+<th>CS</th>
+<th>lucknow</th>
+</tr>
+<tr>
+<th>Amita</th>
+<th>CS</th>
+<th>sultanpur</th>
+</tr>
+<tr>
+<th>Anaya</th>
+<th>IIT</th>
+<th>Amethi</th>
+</tr>
+</table>
+<button id="btn2">empty</button>
+<button id="btn1">style</button>
+<button id="btn3">remove</button>
+<button id="btn4">row</button>
+<button id="btn5">before</button>
+</body>
+</html>

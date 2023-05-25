@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+div{
+border:10px solid green;
+height:200px;
+width:200px;
+margin:20px;
+float:left;
+}
+.a{
+transform:rotate(360deg);
+background:purple;
+transition:all ease 3s;
+}
+.b{
+transform:rotate(-360deg);
+background:pink;
+transition:all ease 1s;
+}
+p{
+margin-top:20px;
+margin-left:10px;
+padding:5px;
+border:2px solid red;}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#box1,#box3").addClass('a');
+$("#box2,#box4").addClass('b');
+});
+$("#btn2").click(function(){
+$("#box1,#box3").removeClass('a');
+$("#box2,#box4").removeClass('b');
+});
+$("#btn3").click(function(){
+$("#box2,#box3").toggleClass('a');
+$("#box1,#box4").toggleClass('b');
+});
+
+});
+</script>
+</head>
+<body>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+
+<button id="btn1">addclass</button>
+<button id="btn2">removeclass</button>
+<button id="btn3">toggleclass</button>
+
+</body>
+</html>

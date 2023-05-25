@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+img{
+border:10px solid orange;
+padding:10px;
+box-shadow:2px 2px 4px black inset;
+}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#im1").hide(4000);
+$("#im2").hide(5000);
+});
+$("#btn2").click(function(){
+$("#im1").show(4000);
+$("#im2").show(5000);
+});
+$("#btn3").click(function(){
+$("#im1").toggle(4000);
+$("#im2").toggle(5000);//"fast"||"slow"||"down"
+});
+});
+</script>
+</head>
+<body>
+<img src="E:\image/di.jpg" height="300px" id="im1">
+<img src="E:\image/pn6.jpg" height="300px" id="im2">
+<button id="btn1">HIDE</button>
+<button id="btn2">SHOW</button>
+<button id="btn3">Toggle</button>
+</body>
+</html>

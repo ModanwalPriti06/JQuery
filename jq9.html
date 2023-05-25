@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("input").blur(function(){
+var a=$("#im1").val();
+var b=$("#im2").val();
+$("#spn").text(a+b);
+});
+});
+</script>
+</head>
+<body>
+<input type="text" id="im1"/>
+<input type="text" id="im2"/>
+</br>
+<span id="spn"></span>
+</body>
+</html>

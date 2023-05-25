@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#box{
+
+}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#box").after("WELCOME");
+});
+$("#btn2").click(function(){
+$("#box").before("technologies");
+});
+$("#btn4").click(function(){
+$("#box").append("<h1>preeti modanwal</h1>");
+});
+$("#btn3").click(function(){
+$("#box").prepe("<h1>juhi mishra</h1>");
+});
+});
+</script>
+</head><body>
+<div id="box">
+<h1>WELCOME</h1>
+<img src="E:\image/pp.jpg" height="300px" width="350px"></br>
+his is a humble attempt to develop a basic website by the students for the students
+Content of the website will cover basic concepts of various technologies and programming languages.
+ Focus area of the website is to provide simple programming exercises of concert technologies.
+We are trying to adopt the continuous development and maintenance of the website in incremental manner.So soon more and more content of various Technologies shall be made available
+</div></br>
+<button id="btn1">after</button>
+<button id="btn2">before</button>
+<button id="btn4">append</button>
+<button id="btn3">prepe</button></body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+
+var a=$("txt1").val();
+var b=$("txt2").val();
+if(a!=b){
+$("#msg").text("your password is not  match");
+$("#msg").css("color","red");
+$("#txt1,#txt2").css("border","2px solid red");
+}
+else{
+$("#msg").text("your password is match");
+$("#msg").css("color","green");
+$("#txt1,#txt2").css("border","2px solid green");
+}
+
+});
+});
+</script>
+</head>
+<body>
+Password</br><input type="password" id="txt1"/><b id="msg"></b></br>
+Confirm password</br><input type="password" id="txt2"/></br>
+<button>Click</button>
+</body>
+</html>

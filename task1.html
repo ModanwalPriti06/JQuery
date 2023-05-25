@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var a=$("#a").html();
+var b=$("#b").html();
+$("#a").html(b);
+$("#b").html(a);
+});
+});
+</script>
+</head><body>
+<div id="a">20</div>
+<div id="b">30</div>
+<button>swap</button>
+</div></body>
+</html>

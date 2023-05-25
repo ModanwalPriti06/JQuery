@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("select").change(function(){
+var v=$(this).val();
+if(v=="st")
+$("input").val("5000");
+else if(v=="vt")
+$("input").val("7000");
+else if(v=="ap")
+$("input").val("10,000");
+else if(v=="syt")
+$("input").val("1000");
+else if(v=="wt")
+$("input").val("2000");
+});
+});
+</script>
+</head>
+<body>
+Select Trainig</br>
+<select>
+<option>Select Course--</option>
+<option value="st">Summer traning</option>
+<option value="vt">Vocational training</option>
+<option value="ap">Apprentiship</option>
+<option value="wt">Winter traning</option>
+<option value="syt">Syllabus traning</option>
+</select></br>
+Amount to pay:</br>
+<input type="text" id="txt" readonly />
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+img{
+border:10px solid orange;
+padding:10px;
+box-shadow:2px 2px 4px black inset;
+}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var a1=$("#im1").attr("src");
+var a2=$("#im2").attr("src");
+$("#im1").attr("src",a2);
+$("#im2").attr("src",a1);
+});
+});
+</script>
+</head>
+<body>
+<img src="E:\image/ww.jpg" height="300px" id="im1">
+<img src="E:\image/w1.jpg" height="300px" id="im2">
+<button>Click</button>
+</body>
+</html>

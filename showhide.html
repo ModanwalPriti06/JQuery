@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var v=$("#txt1").val();
+var b=$("#btn").val();
+if(v!=""){
+if(b=="Show")
+{
+$("#btn").val("Hide");
+$("#txt1").attr("type","text");
+}
+
+else{
+$("#btn").val("Show");
+$("#txt1").attr("type","password");
+}
+}
+});
+});
+</script>
+</head>
+<body>
+Password<input type="password" id="txt1"/>
+
+<input type="button" value="Show" id="btn"</button>
+</body>
+</html>

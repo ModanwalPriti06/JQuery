@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#txt1").keypress(function(){
+var a=$(this).val();
+$("#img1").text(a);
+});
+$("#txt2").keyup(function(){
+b=$(this).val();
+$("#img2").text(b);
+});
+});
+</script>
+</head>
+<body>
+Keypress<input type="text" id="txt1"/></br>
+KeyUp<input type="text" id="txt2"/>
+<span id="img1"></span>
+<span id="img2"></span>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#register,#login{
+height:300px;
+width:400px;
+background:navy;
+text-align:center;
+line-height:300px;
+margin:25px auto;
+font-size:50px;
+border:10px solid black;}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#login").css("display","none");
+$("#btn1").click(function(){
+$("#register").hide("slow");
+$("#login").slideDown("slow");
+
+});
+$("#btn2").click(function(){
+$("#register").slideDown("slow");
+$("#login").hide("slow");
+
+});
+});
+</script>
+</head>
+<body>
+<div id="register" style="background:maroon;"></div>
+<div id="login"></div>
+<button id="btn1">login</button>
+<button id="btn2">Register</button>
+</body>
+</html>

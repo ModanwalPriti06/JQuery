@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var v=$("#txt1").val();
+var a=confirm("Do you want to copy content");
+if(a==true)
+$("#txt2").val(v*v);
+});
+});
+</script>
+</head>
+<body>
+<input type="type" id="txt1"/>
+<input type="type" id="txt2"/>
+<button>Click!</button>
+</body>
+</html>

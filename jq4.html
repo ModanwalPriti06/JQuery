@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var a1=$("#txt1").html();
+var a2=$("#txt2").html();
+var ans=$("#tb").html();
+$("#tb").html("JQuery"+"</br>"+"JavaScript");
+$("#tb").css("color","green");
+$("#txt2").css("border","4px solid red");
+$("#txt2").css("color","red");
+$("#txt1").css("border","4px solid red");
+$("#txt1").css("color","red");
+});
+})
+</script>
+</head>
+<body>
+<textarea placeholder="JQuery" id="txt1"></textarea>
+<textarea placeholder="JavaScript" id="txt2"></textarea></br>
+<button>click to check the effect</button>
+<p id="tb"></p>
+</body>
+</html>

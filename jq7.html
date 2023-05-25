@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("select").change(function(){
+var res="<tr><td>Preeti</td><td>GGPA</td><td>Computer Science</td><td>3rd Year</td><td>4536789201</td></tr>";
+var re="<tr><td>Amita</td><td>GGPA</td><td>Computer Science</td><td>3rd Year</td><td>4536789201</td></tr>";
+var r="<tr><td>Akriti</td><td>GGPA</td><td>Computer Science</td><td>3rd Year</td><td>4536789201</td></tr>";
+var e="<tr><td>Anjali</td><td>GGPA</td><td>Computer Science</td><td>3rd Year</td><td>4536789201</td></tr>";
+var rest="<tr><td>Manali</td><td>GGPA</td><td>Computer Science</td><td>3rd Year</td><td>4536789201</td></tr>";
+var v=$(this).val();
+if(v=="st")
+$("tr:eq(0)").after(res);
+else if(v=="vt")
+$("tr:eq(1)").after(re);
+else if(v=="ap")
+$("tr:eq(2)").after(r);
+else if(v=="l")
+$("tr:eq(3)").after(e);
+else if(v=="wt")
+$("tr:eq(4)").after(rest);
+});
+});
+
+</script>
+</head>
+<body>
+Fill your data</br>
+<select>
+<option>Student Name</option>
+<option value="st">Preeti</option>
+<option value="vt">Amita</option>
+<option value="ap">Akriti</option>
+<option value="l">Anjali</option>
+<option value="wt">Manali</option>
+
+</select></br>
+<table border="1px">
+<tr>
+<th>Name</th>
+<th>College</th>
+<th>Branch</th>
+<th>Year</th>
+<th>Phone</th>
+</tr>
+</table>
+</body>
+</html>

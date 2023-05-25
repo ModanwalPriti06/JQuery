@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+div{
+border:5px solid black;
+height:100px;
+width:200px;
+margin:20px;
+float:left;
+padding:20px;
+}
+.p{
+margin-top:20px;
+margin-left:10px;
+padding:5px;
+border:4px solid black;
+background:skyblue;
+text-decoration:underline;}
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#box1,#box2").addClass('p');
+});
+$("#btn1").click(function(){
+var v=$("#txt1").val();
+var a=confirm("Do you want to copy content");
+if(a==true)
+$("#txt2").val(v);
+});
+});
+</script>
+</head>
+<body>
+<div id="box1"><input type="type" id="txt1"/></div>
+<div id="box2"><input type="type" id="txt2"/><p></div>
+<button id="btn1">addclass</button>
+</body>
+</html>

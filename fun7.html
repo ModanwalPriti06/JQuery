@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#img1").click(function(){
+$(this).css("display","none");
+$("#img2").css("display","block");
+$("input").attr("type","text");
+});
+$("#img2").click(function(){
+$(this).css("display","none");
+$("#img1").css("display","block");
+$("input").attr("type","password");
+});
+});
+
+</script>
+</head>
+<body>
+<input type="password" style="padding:6px"/>
+<img src="E:\image\goldencircle.jpg" id="img1" style="height:20px; width:15px; margin-bottom:-10px; margin-left:-20px;">
+<img src="E:\image\goldencircle.jpg" id="img2" style="height:20px; width:15px; margin-bottom:-10px; margin-left:-20px;">
+
+</body>
+</html>

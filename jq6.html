@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("select").change(function(){
+
+var v=$(this).val();
+if(v=="st")
+$(".im").attr("src","E:\image/bnbn.jbg");
+else if(v=="vt")
+$(".im").attr("src","E:\image/apple.png");
+else if(v=="ap")
+$(".im").attr("src","E:\image/grapes.png");
+else if(v=="syt")
+$(".im").attr("src","E:\image/str.png");
+else if(v=="wt")
+$(".im").attr("src","E:\image/mango.png");
+else if(v=="l")
+$(".im").attr("src","E:\image/lemon.png");
+});
+});
+</script>
+</head>
+<body>
+Select Our Like Fruit</br>
+<select>
+<option>Select Fruit--</option>
+<option value="st">Banana</option>
+<option value="vt">Apple</option>
+<option value="ap">Grapes</option>
+<option value="wt">Mango</option>
+<option value="l">Lemon</option>
+<option value="syt">Straberry</option>
+</select></br>
+Fruit:</br>
+<img src="E:\image\f.png" class="im"/>
+</body>
+</html>
